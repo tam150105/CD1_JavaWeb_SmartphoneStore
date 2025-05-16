@@ -7,45 +7,40 @@ Chào mừng đến với Smartphone Store, một ứng dụng web thương mạ
 
 📚 Mục Lục
 
-🎯 Giới thiệu tính năng
+  🎯 Giới thiệu tính năng
 
-🛠️ Công nghệ sử dụng
+  📁 Cấu trúc dự án
 
-⚙️ Yêu cầu cài đặt
+  🛠️ Công nghệ sử dụng
 
-🚀 Hướng dẫn cài đặt dự án
+  ⚙️ Yêu cầu cài đặt
 
-Bước 1: Clone dự án
+  🚀 Hướng dẫn cài đặt dự án
 
-Bước 2: Tạo cơ sở dữ liệu và cấu hình
+    Bước 1: Clone dự án
 
-Bước 3: Build dự án bằng Maven
+    Bước 2: Tạo cơ sở dữ liệu và cấu hình
 
-Bước 4: Chạy ứng dụng
+    Bước 3: Build dự án bằng Maven
 
-Bước 5: Truy cập giao diện web
+    Bước 4: Chạy ứng dụng
 
-Bước 6: Thêm dữ liệu mẫu (tuỳ chọn)
+    Bước 5: Truy cập giao diện web
 
-📁 Cấu trúc dự án
+    Bước 6: Thêm dữ liệu mẫu (tuỳ chọn)
 
-🧑‍💻 Hướng dẫn sử dụng
-
-🤝 Đóng góp
-
-📄 Giấy phép
 
 🎯 Giới thiệu tính năng
 👤 Người dùng
-Đăng ký, đăng nhập với bảo mật (Spring Security)
+  Đăng ký, đăng nhập với bảo mật (Spring Security)
 
-Cập nhật thông tin cá nhân, xem lịch sử đơn hàng
+  Cập nhật thông tin cá nhân, xem lịch sử đơn hàng
 
-Tìm kiếm sản phẩm theo từ khóa, hãng, mức giá
+  Tìm kiếm sản phẩm theo từ khóa, hãng, mức giá
 
-Xem chi tiết sản phẩm (ảnh, thông số)
+  Xem chi tiết sản phẩm (ảnh, thông số)
 
-Thêm vào giỏ hàng và đặt mua
+  Thêm vào giỏ hàng và đặt mua
 
 🛒 Quản trị viên
 Truy cập dashboard quản trị
