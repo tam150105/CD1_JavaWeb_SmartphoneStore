@@ -76,6 +76,8 @@ Chào mừng đến với Smartphone Store, một ứng dụng web thương mạ
 
 
 
+https://github.com/user-attachments/assets/9729e187-a573-4612-ba31-9da48c786639
+
 
 📁 Cấu trúc dự án
 
