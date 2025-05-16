@@ -8,83 +8,115 @@ Chào mừng đến với Smartphone Store, một ứng dụng web thương mạ
 📚 Mục Lục
 
   🎯 Giới thiệu tính năng
-
+  
   📁 Cấu trúc dự án
-
+  
   🛠️ Công nghệ sử dụng
 
   ⚙️ Yêu cầu cài đặt
 
   🚀 Hướng dẫn cài đặt dự án
 
-    Bước 1: Clone dự án
-
-    Bước 2: Tạo cơ sở dữ liệu và cấu hình
-
-    Bước 3: Build dự án bằng Maven
-
-    Bước 4: Chạy ứng dụng
-
-    Bước 5: Truy cập giao diện web
-
-    Bước 6: Thêm dữ liệu mẫu (tuỳ chọn)
-
 
 🎯 Giới thiệu tính năng
-👤 Người dùng
-  Đăng ký, đăng nhập với bảo mật (Spring Security)
 
-  Cập nhật thông tin cá nhân, xem lịch sử đơn hàng
+  👤 Người dùng
 
-  Tìm kiếm sản phẩm theo từ khóa, hãng, mức giá
+    Đăng ký, đăng nhập với bảo mật (Spring Security)
 
-  Xem chi tiết sản phẩm (ảnh, thông số)
+    Cập nhật thông tin cá nhân, xem lịch sử đơn hàng
 
-  Thêm vào giỏ hàng và đặt mua
+    Tìm kiếm sản phẩm theo từ khóa, hãng, mức giá
 
-🛒 Quản trị viên
-Truy cập dashboard quản trị
+    Xem chi tiết sản phẩm (ảnh, thông số)
 
-Thêm / sửa / xóa sản phẩm
+    Thêm vào giỏ hàng và đặt mua
 
-Quản lý đơn hàng và người dùng
+  🛒 Quản trị viên
 
-Xem thống kê bán hàng
+    Truy cập dashboard quản trị
 
-🌐 Giao diện
-Giao diện responsive (hỗ trợ cả máy tính và điện thoại)
+    Thêm / sửa / xóa sản phẩm
 
-Giao diện KHÔNG dùng Thymeleaf (tách frontend)
+    Quản lý đơn hàng và người dùng
+
+    Xem thống kê bán hàng
+
+
+
+📁 Cấu trúc dự án
+
+      CD1_JavaWeb_SmartphoneStore/
+      ├── .mvn/                           # Maven Wrapper cấu hình
+      │
+      ├── src/
+      │   └── main/
+      │       ├── java/com/poly/app/     # Mã nguồn chính
+      │       │   ├── Impl/              # Triển khai các lớp service (implements)
+      │       │   ├── config/            # Cấu hình ứng dụng (Spring Config, Security, ...)
+      │       │   ├── controller/        # Các controller xử lý request (Spring MVC)
+      │       │   ├── dto/               # Các lớp Data Transfer Object (DTO)
+      │       │   ├── entity/            # Các lớp Entity ánh xạ bảng CSDL (JPA/Hibernate)
+      │       │   ├── repository/        # Interface tương tác với CSDL (Spring Data JPA)
+      │       │   ├── service/           # Interface định nghĩa logic nghiệp vụ
+      │       │   ├── util/              # Các lớp tiện ích dùng chung (Utils, Constants, ...)
+      │       │   ├── AssignmentHtMobileApplication.java  # Lớp main khởi động Spring Boot
+      │       │   └── ServletInitializer.java             # Khởi tạo servlet khi deploy WAR
+      │
+      │       └── resources/
+      │           ├── i18n/              # Thư mục chứa file đa ngôn ngữ (quốc tế hóa)
+      │           │   ├── layout.properties         # Tiếng Anh
+      │           │   └── layout_vi.properties      # Tiếng Việt
+      │           ├── static/            # Tài nguyên tĩnh (CSS/JS/JSP)
+      │           │   └── css.jsp
+      │           └── application.properties        # Cấu hình ứng dụng (port, db, mail,...)
+      │
+      │       └── webapp/                # Thư mục web root (dành cho JSP project)
+      │           ├── WEB-INF/
+      │           │   └── views/         # View JSP (trong WEB-INF, bảo mật không truy cập trực tiếp)
+      │           ├── css/               # Tệp CSS giao diện
+      │           ├── document/          # Tài liệu, PDF,...
+      │           ├── fonts/             # Fonts giao diện
+      │           ├── img/               # Ảnh giao diện
+      │           ├── js/                # JavaScript
+      │           └── taglib/            # Các taglib tuỳ chỉnh dùng trong JSP
+      │
+      ├── htmobilescript.sql             # Script tạo và khởi tạo CSDL
+      ├── .gitignore                     # Loại trừ file/thư mục khi đẩy lên Git
+      ├── README.md                      # Giới thiệu và hướng dẫn dự án
+      └── pom.xml                        # Tệp khai báo dependencies và plugin Maven
+      
 
 🛠️ Công nghệ sử dụng
-Backend: Java 17, Spring Boot, Spring Security, Spring MVC, JPA (Hibernate)
 
-Database: MySQL 8+
+  Backend: Java 17, Spring Boot, Spring Security, JPA (Hibernate)
+  
+  Database: SQL Server
+  
+  Xây dựng: Maven
+  
+  IDE: IntelliJ IDEA / Eclipse
 
-Xây dựng: Maven
-
-IDE: IntelliJ IDEA / Eclipse
-
-Thư viện khác: Lombok, MySQL Connector/J
 
 ⚙️ Yêu cầu cài đặt
-Trước khi cài đặt, đảm bảo bạn đã cài:
+  Trước khi cài đặt, đảm bảo bạn đã cài:
 
-Công cụ	Phiên bản khuyến nghị
-Java JDK	17 trở lên
-Maven	3.8.x trở lên
-MySQL Server	8.0 trở lên
-MySQL Workbench	(tuỳ chọn)
-IntelliJ IDEA / Eclipse	Mới nhất
-Git	Mới nhất
+  | 🛠️ Công cụ                             | ✅ Phiên bản khuyến nghị | 📌 Ghi chú                                 |
+  | --------------------------------------- | ----------------------- | ------------------------------------------ |
+  | **Java JDK**                            | 17 trở lên              | Bắt buộc, nên dùng bản LTS                 |
+  | **Maven**                               | 3.8.x trở lên           | Dùng để quản lý thư viện và build dự án    |
+  | **SQL Server**                          | 2019 hoặc 2022          | Dùng làm cơ sở dữ liệu chính               |
+  | **SQL Server Management Studio (SSMS)** | Mới nhất                | Tuỳ chọn nhưng rất hữu ích để quản lý CSDL |
+  | **IntelliJ IDEA / Eclipse**             | Mới nhất                | Dùng để lập trình Java Spring Boot         |
+  | **Git**                                 | Mới nhất                | Clone source code từ GitHub                |
+  
+![Beginning-c++- pdf và 10 trang nữa - Cá nhân - Microsoft​ Edge 9_18_2023 10_27_31 PM](https://github.com/user-attachments/assets/be5523f9-73dc-4797-a815-4a5523b62e5b)
 
 🚀 Hướng dẫn cài đặt dự án
-Bước 1: Clone dự án
-bash
-Sao chép
-Chỉnh sửa
-git clone https://github.com/tam150105/CD1_JavaWeb_SmartphoneStore.git
-cd CD1_JavaWeb_SmartphoneStore
+  Bước 1: Clone dự án
+  bash
+    git clone https://github.com/tam150105/CD1_JavaWeb_SmartphoneStore.git
+    cd CD1_JavaWeb_SmartphoneStore
 📷 Chèn ảnh: Terminal sau khi clone thành công.
 
 Bước 2: Tạo cơ sở dữ liệu và cấu hình
