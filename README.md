@@ -199,7 +199,7 @@ Dùng lệnh cd để chuyển vào thư mục chứa dự án.
 
 Ví dụ:
 
-    cd C:\Users\Bạn\Projects\CD1_JavaWeb_SmartphoneStore
+    cd C:\Users\jljl\Projects\CD1_JavaWeb_SmartphoneStore
 Sau đó chạy lệnh:
 
     mvn clean install
