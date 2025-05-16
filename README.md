@@ -213,6 +213,7 @@ Mở Eclipse IDE/IntelliJ IDEA và chạy file SmartphoneStoreApplication.java.
 
 
 Bước 5: Truy cập giao diện web
+
 Mở trình duyệt và tìm kiếm: http://localhost:8081
 
 
