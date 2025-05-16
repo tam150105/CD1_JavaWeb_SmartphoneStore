@@ -1,7 +1,7 @@
 # CĐ1_JavaWeb_SmartphoneStore
 📱 Smartphone Store – Dự án Website Bán Điện Thoại Java Spring Boot
 
-Chào mừng đến với Smartphone Store, một ứng dụng web thương mại điện tử được xây dựng bằng Java Spring Boot kết hợp với MySQL, hỗ trợ bán điện thoại trực tuyến với tính năng quản lý sản phẩm, đơn hàng, người dùng và phân quyền rõ ràng.
+Chào mừng đến với Smartphone Store, một ứng dụng web thương mại điện tử được xây dựng bằng Java Spring Boot kết hợp với SQl Server, hỗ trợ bán điện thoại trực tuyến với tính năng quản lý sản phẩm, đơn hàng, người dùng và phân quyền rõ ràng.
 
 🔗 Link GitHub dự án:
 👉 https://github.com/tam150105/CD1_JavaWeb_SmartphoneStore.git
