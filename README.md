@@ -27,29 +27,29 @@ Chào mừng đến với Smartphone Store, một ứng dụng web thương mạ
 
   👤 Người dùng
 
-    Đăng ký, đăng nhập với bảo mật (Spring Security)
-
-    Cập nhật thông tin cá nhân, xem lịch sử đơn hàng
-
-    Tìm kiếm sản phẩm theo từ khóa, hãng, mức giá
-
-    Xem chi tiết sản phẩm (ảnh, thông số)
-
-    Thêm vào giỏ hàng và đặt mua
-
-    Xác thực tài khoản qua email: Gửi liên kết kích hoạt tài khoản khi người dùng đăng ký.
-
-    Xác nhận đơn hàng qua email: Gửi chi tiết đơn hàng sau khi người dùng đặt mua thành công.
+    🔐 Đăng ký, đăng nhập bảo mật (sử dụng Spring Security)
+    
+    📝 Cập nhật thông tin cá nhân, xem lịch sử đơn hàng
+    
+    🔎 Tìm kiếm sản phẩm theo từ khóa, hãng, mức giá
+    
+    🖼️ Xem chi tiết sản phẩm (hình ảnh, thông số kỹ thuật)
+    
+    🛒 Thêm vào giỏ hàng và đặt mua sản phẩm
+    
+    ✉️ Xác thực tài khoản qua email – gửi liên kết kích hoạt khi đăng ký
+    
+    📧 Xác nhận đơn hàng qua email – gửi chi tiết đơn hàng sau khi đặt mua thành công
 
   🛒 Quản trị viên
-
-    Truy cập dashboard quản trị
-
-    Thêm / sửa / xóa sản phẩm
-
-    Quản lý đơn hàng và người dùng
-
-    Xem thống kê bán hàng
+  
+    📊 Truy cập dashboard quản trị
+    
+    ➕✏️❌ Thêm / sửa / xóa sản phẩm
+    
+    📦👥 Quản lý đơn hàng và người dùng
+    
+    📈 Xem thống kê bán hàng
 
 📸 Một số hình ảnh giao diện
 
@@ -151,34 +151,34 @@ https://github.com/user-attachments/assets/8827a2a9-bb44-4550-99df-a8e56ee82b2d
 
 🚀 Hướng dẫn cài đặt dự án
 
-  Bước 1: Clone dự án
+ 1️⃣ Bước 1: Clone dự án
   
         git clone https://github.com/tam150105/CD1_JavaWeb_SmartphoneStore.git
         cd CD1_JavaWeb_SmartphoneStore
     
-  Bước 2: Tạo cơ sở dữ liệu và cấu hình
+ 2️⃣ Bước 2: Tạo cơ sở dữ liệu và cấu hình
   
-   Tạo database:
+   🟢 Tạo database:
     
         Bước 1: Mở SQL Server Management Studio (SSMS) hoặc công cụ tương đương.
         Bước 2: Mở file htmobilescript.sql (có sẵn trong dự án) bằng SSMS.
         Nước 3: Chạy toàn bộ script để tạo bảng, quan hệ và dữ liệu mẫu.
         
-   Cấu hình file src/main/resources/application.properties:
+  🟢 Cấu hình file src/main/resources/application.properties:
+    
+        server.port = your_post
+        spring.datasource.url=jdbc:sqlserver://localhost:your_port;databaseName=HTMOBILE;encrypt=true;trustServerCertificate=true
+        spring.datasource.username=your_username
+        spring.datasource.password=your_password_here
 
-    server.port = your_post
-    spring.datasource.url=jdbc:sqlserver://localhost:your_port;databaseName=HTMOBILE;encrypt=true;trustServerCertificate=true
-    spring.datasource.username=your_username
-    spring.datasource.password=your_password_here
-
-   Giải thích:
+  🟡 Giải thích:
    
     server.port: Thay bằng số cổng mà bạn muốn ứng dụng Spring Boot sẽ chạy (ví dụ: 8080, 8081,...).
     your_port: Thay bằng số cổng SQL Server của bạn (mặc định là 1433).
     your_username: Thay bằng tên đăng nhập SQL Server.
     your_password_here: Thay bằng mật khẩu tương ứng.
 
-   Ví dụ: 
+  🔴 Ví dụ: 
    
     server.port = 8081
     spring.datasource.url = jdbc:sqlserver://localhost:1433;databaseName=HTMOBILE ;encrypt=true;trustServerCertificate=true
@@ -189,32 +189,34 @@ https://github.com/user-attachments/assets/8827a2a9-bb44-4550-99df-a8e56ee82b2d
 ![Screenshot 2025-05-16 225539](https://github.com/user-attachments/assets/71d97253-d155-410c-a762-0913910e2df9)
 
 
-Bước 3: Build dự án bằng Maven
-Cách thực hiện:
-Mở Terminal (Linux/macOS) hoặc Command Prompt (Windows).
+ 3️⃣ Bước 3: Build dự án bằng Maven
 
-Dùng lệnh cd để chuyển vào thư mục chứa dự án.
+   Cách thực hiện:
 
-    cd đường_dẫn_đến_thư_mục_dự_án
+   ➡️  Mở Terminal (Linux/macOS) hoặc Command Prompt (Windows).
 
-Ví dụ:
+   ➡️  Dùng lệnh cd để chuyển vào thư mục chứa dự án.
 
-    cd C:\Users\jljl\Projects\CD1_JavaWeb_SmartphoneStore
-Sau đó chạy lệnh:
+          cd đường_dẫn_đến_thư_mục_dự_án
 
-    mvn clean install
+   💡Ví dụ:
 
-Bước 4: Chạy ứng dụng
+          cd C:\Users\jljl\Projects\CD1_JavaWeb_SmartphoneStore
+   ➡️  Sau đó chạy lệnh:
 
-Mở Eclipse IDE/IntelliJ IDEA và chạy file SmartphoneStoreApplication.java. 
+          mvn clean install
+
+ 4️⃣ Bước 4: Chạy ứng dụng
+
+   ➡️ Mở Eclipse IDE/IntelliJ IDEA và chạy file SmartphoneStoreApplication.java. 
 
 
 ![Screenshot 2025-05-16 231202](https://github.com/user-attachments/assets/1eaf36b6-4b11-4bcd-83f6-419a005b6d7e)
 
 
-Bước 5: Truy cập giao diện web
+ 5️⃣ Bước 5: Truy cập giao diện web
 
-Mở trình duyệt và tìm kiếm: http://localhost:8081
+  ➡️ Mở trình duyệt và tìm kiếm: http://localhost:8081
 
 
 🤝 Đóng góp
