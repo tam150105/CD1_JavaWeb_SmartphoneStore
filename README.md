@@ -7,15 +7,15 @@ Chào mừng đến với Smartphone Store, một ứng dụng web thương mạ
 
 📚 Mục Lục
 
-  🎯 Giới thiệu tính năng
+    🎯 Giới thiệu tính năng
   
-  📁 Cấu trúc dự án
+    📁 Cấu trúc dự án
   
-  🛠️ Công nghệ sử dụng
+    🛠️ Công nghệ sử dụng
 
-  ⚙️ Yêu cầu cài đặt
+    ⚙️ Yêu cầu cài đặt
 
-  🚀 Hướng dẫn cài đặt dự án
+    🚀 Hướng dẫn cài đặt dự án
 
 
 🎯 Giới thiệu tính năng
