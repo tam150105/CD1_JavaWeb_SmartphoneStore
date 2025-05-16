@@ -6,6 +6,7 @@ Chào mừng đến với Smartphone Store, một ứng dụng web thương mạ
 👉 https://github.com/tam150105/CD1_JavaWeb_SmartphoneStore.git
 
 📚 Mục Lục
+
 🎯 Giới thiệu tính năng
 
 🛠️ Công nghệ sử dụng
