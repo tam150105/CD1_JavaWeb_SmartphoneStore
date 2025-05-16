@@ -75,6 +75,10 @@ Chào mừng đến với Smartphone Store, một ứng dụng web thương mạ
 ![image](https://github.com/user-attachments/assets/5a9c274c-eae0-4db5-a287-c0420c1a55b8)
 
 
+
+https://github.com/user-attachments/assets/bd085400-8541-4a29-8f4e-c99e296a3ad1
+
+
 📁 Cấu trúc dự án
 
       CD1_JavaWeb_SmartphoneStore/
